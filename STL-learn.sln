@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Set", "Set\Set.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Map", "Map\Map.vcxproj", "{E64941CD-2DD5-40BA-AA03-4AC20B7BBD53}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxproj", "{5224C46E-1667-4B08-A5C4-F2D4D014D50D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,10 @@ Global
 		{E64941CD-2DD5-40BA-AA03-4AC20B7BBD53}.Debug|Win32.Build.0 = Debug|Win32
 		{E64941CD-2DD5-40BA-AA03-4AC20B7BBD53}.Release|Win32.ActiveCfg = Release|Win32
 		{E64941CD-2DD5-40BA-AA03-4AC20B7BBD53}.Release|Win32.Build.0 = Release|Win32
+		{5224C46E-1667-4B08-A5C4-F2D4D014D50D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5224C46E-1667-4B08-A5C4-F2D4D014D50D}.Debug|Win32.Build.0 = Debug|Win32
+		{5224C46E-1667-4B08-A5C4-F2D4D014D50D}.Release|Win32.ActiveCfg = Release|Win32
+		{5224C46E-1667-4B08-A5C4-F2D4D014D50D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

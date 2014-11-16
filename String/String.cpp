@@ -54,7 +54,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	transform(str5.begin( ), str5.end( ), str5.begin( ), toupper);
 	cout << str5 << endl;
 
-
 	return 0;
 }
 

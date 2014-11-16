@@ -66,13 +66,21 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 
 	}
-
+	//erase
 	cout << "_______________\n";
-	//if (mismap.erase(1))
+	if (mismap.erase(1) > 0)
 	{
-		cout << mismap.erase(1)<<endl;
+		cout << "delete 1 successed " << endl;
 	}
-	
+
+	multimap<int, string>::iterator itt = mismap.find(2);
+	if (itt != mismap.end( ))
+	{
+		mismap.erase(itt);
+	}
+
+	mismap.erase(mismap.lower_bound(1000), mismap.upper_bound(1000));
+	//	mismap.erase(mismap.begin( ), mismap.end( ));
 	traverse(mismap);
 	cout << "_______________\n";
 
