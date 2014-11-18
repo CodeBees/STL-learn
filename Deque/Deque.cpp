@@ -7,6 +7,8 @@
 
 using namespace std;
 
+
+//deque ¼´Ë«¶Ë¶ÓÁÐ
 int _tmain(int argc, _TCHAR* argv[])
 {
 
