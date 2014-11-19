@@ -5,7 +5,7 @@
 #include <iostream>
 #include <queue>
 #include <list>
-
+#include <functional>
 
 using  namespace std;
 
@@ -13,7 +13,8 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 	priority_queue<int,deque<int>> pqlist;//最大值优先队列，不能使用list
-	priority_queue<int,deque<int>,greater<int>> pqglist;//最大值优先队列，不能使用list
+	priority_queue<int, deque<int>, greater<int>> pqglist;//最大值优先队列，不能使用list,最后为排序算法(谓词)
+	//priority_queue<int, deque<int>, less<int>> pqglist;//最大值优先队列，不能使用list,最后为排序算法(谓词)
 
 	pqlist.push(-0);
 	pqlist.push(-20);
@@ -27,6 +28,21 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		cout<<"-->"<<pqlist.top()<<endl;
 		pqlist.pop();
+	}
+
+
+	pqglist.push(-0);
+	pqglist.push(-20);
+	pqglist.push(10);
+	pqglist.push(200);
+
+
+	cout << "优先级队列队首" << pqglist.top( ) << endl;
+
+	while (!pqglist.empty( ))
+	{
+		cout << "-->" << pqglist.top( ) << endl;
+		pqglist.pop( );
 	}
 
 
