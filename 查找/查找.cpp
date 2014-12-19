@@ -131,6 +131,27 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		cout << "find 奇偶奇序列" <<endl;
 	}
+
+	//find_frist_of() 找到其中的任意一个，没有find_last_of ，用反向迭代器进行搜索
+
+	list<int> ffolist;
+	vector<int> ffovector;
+	for (int idx = 0; idx < 10;idx++)
+	{
+		ffolist.push_back(idx);
+	}
+
+	ffovector.push_back(0);
+	ffovector.push_back(2);
+	ffovector.push_back(5);
+
+	list<int>::iterator  ipos=find_first_of(ffolist.begin( ), ffolist.end( ), ffovector.begin( ), ffovector.end( ));
+
+	if (ipos!=ffolist.end())
+	{
+		cout << "find one of element ffovector  \""<<*ipos << "\" in ffolist " <<endl;
+	}
+
 	return 0;
 }
 
